@@ -18,7 +18,8 @@ module.exports = {
         veryPaleRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
         lightSlateGray: 'hsl(209,13%,51%)',
-        testPurple : 'hsl(244,57%,50%)'
+        testPurple : 'hsl(244,57%,50%)',
+        testLilac: 'hsl(272,49%,69%)'
       }
       
     },

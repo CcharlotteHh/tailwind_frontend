@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+#invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 /*hamburger menu */
 .hamburger{
     cursor:pointer;
