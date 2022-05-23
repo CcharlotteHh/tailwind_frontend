@@ -5,18 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <title>First tailwind page</title>
 
 </head>
 <body >
+  
+    
     <div class="relative flex flex-col h-screen min-h-screen">
     <!--Navbar-->
     <nav class="relative container mx-auto p-6">
         <!--flex container-->
         <div class="flex items-center justify-between">
             <!--logo-->
-            <div class="pt-2">
+            <div class="pt-2 flex">
+                <div class="flex items-center justify-start">
                 <img src="assets/img/logo_small.png" alt="logo">
+            </div>
+            
+                <ul class="flex items-center justify-between ">
+                    <li><a href="#" class="hover:text-darkGrayishBlue mr-2">XMD</a></li>
+                    <li><a href="#" class="hover:text-darkGrayishBlue mr-2">Xangoma</a></li>         
+                </ul>
+            
             </div>
             <!--menu items-->
             <ul class="hidden space-x-10 md:flex font-bold">
@@ -25,6 +36,8 @@
                 <li><a href="#" class="hover:text-darkGrayishBlue">How to order</a></li>
                 <li><a href="#" class="hover:text-darkGrayishBlue">New releases</a></li>
                 <li><a href="#" class="hover:text-darkGrayishBlue">Contact</a></li>
+                
+                
             </ul>
             <!--button-->
           
@@ -49,21 +62,23 @@
         </div>
     </nav>
     <!--hero section-->
+   
     
-    <main class="relative flex-grow flex-row bg-testPurple min-w-screen">
-        <aside class="md:flex md:w-1/5 bg-darkBlue flex flex-col flex-grow ">
-            <form class="m-4 relative" action="" method="post">
+    <main class=" flex flex-grow flex-col justify-between">
+        <div class=" flex  w-full ">
+        <aside class=" bg-testPurple  w-1/4 h-full">
+            <form class="m-4 relative w-full " action="" method="post">
               
-           <input type="text" class="h-14 w-200 md:w-100 pl-7 pr-20 mr-4 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Search anything...">
+           <input type="text" class="h-14 w-320 pl-7 pr-20 mr-4 rounded-lg focus:shadow focus:outline-none" placeholder="Search anything...">
              <div class="absolute top-2 right-2 ">
                  
                  <button class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600">Search</button>
                  
              </div>
             </form>
-              <div class="m-4 h-full  bg-brightRed rounded overflow-y-auto">
+              <div class="m-4 bg-brightRed rounded overflow-y-auto ">
               
-              <ul class="  flex flex-col max-h-80 pb-1">
+              <ul class="flex flex-col max-h-80 pb-1 mt-2">
                   <h2 class="text-center text-white font-bold ">Catalouge</h2>
                   <li class="pb-1 pl-2 mb-1"><a class="text-light"href="#">test</a></li>
                   <li class="pb-1 pl-2 mb-1"><a class="text-light"href="#">test</a></li>
@@ -84,6 +99,14 @@
               </ul>
               </div>
           </aside>
+
+          <div class="bg-darkBlue flex items-center w-3/4 col text-white">
+              <div class="h1_container">
+           <h1 class="">Welcome to Xango Music</h1>
+        </div>
+           <p>Xango Music covers the need for music from all over the world. This website is your portal to releases of our distribution, where you can buy your CDs and LPs directly through us.
+            Our office is located in Utrecht (NL), and our distribution warehouse is in Alkmaar (NL) providing stores in the Benelux countries with amazing and beautiful local music from all over the world.</p>
+        </div> 
     </main>
 
     
