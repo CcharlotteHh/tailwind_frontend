@@ -60,3 +60,7 @@ body {
   main {
     flex: 1; /* Or flex-grow: 1;*/
   }
+
+.shopping-cart{
+    height:350px;
+}
