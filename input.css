@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#invisible-scrollbar::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
   }
 /*hamburger menu */
